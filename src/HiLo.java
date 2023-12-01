@@ -24,7 +24,7 @@ public class HiLo {
         playAgain = scanner.next();
         }while (playAgain.equalsIgnoreCase("y"));
         System.out.println("Thank you for playing! Goodbye.");
-        scanner.close();
+        scanner.close();//
     }
 }
 
