@@ -26,5 +26,5 @@ public class HiLo {
         System.out.println("Thank you for playing! Goodbye.");
         scanner.close();//m
     }
-//m
+}
 
