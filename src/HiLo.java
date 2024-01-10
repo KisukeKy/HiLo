@@ -18,7 +18,7 @@ public class HiLo {
                 System.out.println(guess + " is too high. Try again!");
             else 
                 System.out.println(guess + " is correct. You win!");
-        }// end of while loop for guessing.
+        }// end of while loop
         
         System.out.println("Would you like to play again (y/n)?"); 
         playAgain = scanner.next();
