@@ -29,37 +29,3 @@
 // }
 
 
-import java.util.Scanner;
-public class GG {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Welcome to the Number Guessing Game!");
-        System.out.println("Please enter a number between 1 and 10000:");
-
-        int secretNumber = (int) (Math.random() * 10000) + 1;
-        int lowerNumbers = 1;
-        int upperNumbers = 10000;
-
-        while (true) {
-            System.out.print("Your guess: ");
-            int userGuess = scanner.nextInt();
-
-            if (userGuess < lowerNumbers || userGuess > upperNumbers) {
-                System.out.println("Please enter a number between " + lowerNumbers + " and " + upperNumbers + ".");
-            } else if (userGuess < secretNumber) {
-                System.out.println("Your guess is too low, try again.");
-                lowerNumbers = userGuess + 1;
-            } else if (userGuess > secretNumber) {
-                System.out.println("Your guess is too high, try again.");
-                upperNumbers = userGuess - 1;
-            } else {
-                System.out.println("Congratulations! You guessed the correct number: " + secretNumber);
-                break;
-            }
-        }
-
-        scanner.close();
-    }
-}
